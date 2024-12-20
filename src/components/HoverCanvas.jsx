@@ -150,7 +150,7 @@ const HoverCanvas = (props) => {
       className="d-flex flex-column  justify-content-center align-items-center"
     >
       <h2>Another Day to Remember</h2>
-      <p>Hover over this area!</p>
+      <p>Hover ka po dito!</p>
       <button
         className="btn btn-outline-primary"
         onClick={handleTriggerSideBar}
