@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+.sidebar-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-container.hidden {
+  transform: translateX(100%);
+  display: none;
+}
+
+.sidebar-container.visible {
+  transform: translateX(0);
+}

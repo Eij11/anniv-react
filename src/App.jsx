@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import HoverCanvas from "./components/HoverCanvas";
 import Sidebar from "./components/Sidebar";
 
+// import "./App.css";
+
 const App = () => {
   const [triggerSideBar, setTriggerSideBar] = useState(false);
 
@@ -15,10 +17,11 @@ const App = () => {
           />
         </div>
 
-        <div className="col-4">
-          <Sidebar audioSrc="./audio/PaninindiganKita.mp3" />
-          {/* audioSrc="./audio/PaninindiganKita.mp3" */}
-        </div>
+        {triggerSideBar && (
+          <div className="col-4">
+            <Sidebar audioSrc="./audio/PaninindiganKita.mp3" />
+          </div>
+        )}
       </div>
     </div>
   );
